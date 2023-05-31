@@ -2,4 +2,18 @@ body{
     
     background-image: url('../main_background.png');
     background-attachment: fixed;
+    background-size: cover;
+}
+
+p{
+    font-size: 250%;
+    color: white; 
+    font-weight: bold;
+    margin-top: 90px;
+    margin-left: 55px;
+    margin-right: 50%;
+    font-family: 'Inter';
+}
+.button{
+
 }

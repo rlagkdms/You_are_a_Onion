@@ -18,16 +18,13 @@ li{
 #menu{
     width: 100%;
     height: 50px;
+    background: #A7DC71;
 }
 
 #menu ul li a{
-    float : left;
-    width: 25%;
     height: 100%;
     line-height: 50px;
     color: #fff;
-    text-align:center;
-    background: #A7DC71;
 }
 
 #menu ul li a:hover{
@@ -35,4 +32,16 @@ li{
 }
 #selec :visited{
     color: #404040;
+}
+.home {
+    float : left;
+    margin-left: 4%;
+    width: 30%;
+}
+.small{
+    float : left;
+    text-align: right;
+    font-size: 14px;
+    width: 18%;
+    margin-left: 3%;
 }
