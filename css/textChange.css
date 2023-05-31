@@ -1,0 +1,20 @@
+#back{
+    z-index: -2;
+    position:absolute;
+    left:5%;
+    top:50px;
+    width:90%;
+    height:100%;
+    background-color:pink;
+    text-align: center;
+}
+#front{
+    z-index: -1;
+    position:absolute;
+    left:5%;
+    top:50px;
+    width:90%;
+    height:40px;
+    background-color:green;
+    text-align: center;
+}
