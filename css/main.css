@@ -1,19 +1,88 @@
-body{
+/* body{
     
     background-image: url('../main_background.png');
     background-attachment: fixed;
     background-size: cover;
+} */
+#background1{
+    background-image: url('../main_background.png');
+    /* z-index: -2; */
+    position:absolute;
+    width:100%;
+    height:729px;
 }
 
-p{
-    font-size: 250%;
+.title1{
+    font-size: 330%;
     color: white; 
     font-weight: bold;
     margin-top: 90px;
-    margin-left: 55px;
-    margin-right: 50%;
+    margin-left: 10%;
+    margin-right: 35%;
     font-family: 'Inter';
 }
-.button{
 
+.button{
+    background: url(../link.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10%;
 }
+
+.main1{
+    font-size: 115%;
+    margin-top: 35px;
+    margin-left: 10%;
+    margin-right: 27%;
+    color: white;
+    line-height: 130%;
+}
+
+#background2{
+    background-color: #274805;
+    position:absolute;
+    width: 100%;
+    height: 65%;
+    margin-top: 729px;
+}
+.title2{
+    font-size: 270%;
+    color: white; 
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 3%;
+    font-family: 'Inter';
+}
+
+.main2{
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 40%;
+    font-weight: lighter;
+    font-size: 110%;
+    color: white;
+    line-height: 130%;
+}
+
+.circle{
+    margin-right: 9%;
+    margin-left: 1%;
+    margin-top: 1%;
+    max-width:100%;
+    width: 22%;
+    
+    height:auto;
+}
+
+#background3{
+    background-color: #C7DC71;
+    position:absolute;
+    width: 100%;
+    height: 65%;
+    margin-top: 1205px;
+}
+
+/* .title3{
+
+} */
