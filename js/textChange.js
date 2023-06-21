@@ -24,6 +24,10 @@ function send(){
     text3 = text3.replaceAll("찐따", "상추");
     text3 = text3.replaceAll("염병", "생강");
     text3 = text3.replaceAll("개", "파");
+    text3 = text3.replaceAll("좆같", "박같");
+    text3 = text3.replaceAll("죽어", "부추");
+    text3 = text3.replaceAll("자살", "더덕");
+    text3 = text3.replaceAll("디져", "부추");
 
     if(text3 != ""){
         newDiv = document.createElement('div');
