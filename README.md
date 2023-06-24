@@ -1,9 +1,8 @@
-# You_are_a_Onion <img src="../You_are_a_Onion/image/logo.png" height="38">
+# You_are_a_Onion <img src="image/logo.png" height="38">
 
 ## 넌 양파 당근같은 옥수수감자야(넌 양파)
  :&nbsp;&nbsp; 욕의 심각성을 알려주고 줄일 수 있도록 돕는 웹사이트
 
-<br>
 
 ### <b> [기획 배경] </b>
 ---
