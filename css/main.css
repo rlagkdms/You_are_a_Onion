@@ -21,7 +21,7 @@ html, body{
 }
 
 .button{
-    background: url(../link.png) no-repeat;
+    background: url(../image/link.png) no-repeat;
     border: none;
     cursor: pointer;
     margin-top: 50px;
