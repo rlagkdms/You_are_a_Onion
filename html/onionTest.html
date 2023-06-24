@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>식물의 움직임</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>언어의 움직임</title>
+    <link rel="stylesheet" href="../css/onionTest.css" />
     <link rel="stylesheet" href="../css/menu.css">
-</head>
-<body>
-    <div id = "menu">
-        <ul>
-          <li class = "home"><a href="main.html"><img src = "../image/logo.png" width = "20px" height = "30px"> 넌 양파</a></li>
-          <li id = "selec" class = "small"><a href="onionTest.html">식물의 움직임</a></li>
-          <li class = "small"><a href="textChange.html">언어의 움직임</a></li>
-          <li class = "small"><a href="dangerLang.html">언어의 위험성</a></li>
-        </ul>
+    
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li id="selec" class="home">
+          <a href="main.html"
+            ><img src="../image/logo.png" width="20px" height="30px" /> 넌
+            양파</a
+          >
+        </li>
+        <li class="small"><a href="onionTest.html">식물의 움직임</a></li>
+        <li class="small"><a href="textChange.html">언어의 움직임</a></li>
+        <li class="small"><a href="dangerLang.html">언어의 위험성</a></li>
+      </ul>
+    </div>
+ 
+    <div class="content">
+        <h3>버튼을 클릭해 양파의 변화를 살펴보세요!</h3>
+        <div class="img_box">
+          <img src="../image/onion.svg" id ="onion">
+        </div>
+
+        <div class = "check_group">
+          <div class="bad_box">
+            <label>
+              <input type="radio" name="rd" class = "bad">멍청이 
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "bad">바보
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "bad">새끼
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "bad">더러워
+            <label>
+            <label>
+                <input type="radio" name="rd"class = "bad">18
+            </label>
+        </div>
+
+        <div class="good_box">
+            <label>
+              <input type="radio" name="rd" class = "good">천사
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "good">좋아~
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "good">고마워
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "good">힘내
+            </label>
+            <label>
+              <input type="radio" name="rd" class = "good">사랑해
+            </label>
+        </div>
+
       </div>
-</body>
+
+        <div class ="btn_group">
+            <button id="water" >
+                <img src="../image/waterbutton.svg">
+            </button>    
+            <button id="reset"><img src="../image/resetlogo.svg"></button>
+        </div>
+  </div>
+  </body>
+  <script src="../js/onionTest.js"></script>
 </html>
