@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+#content{
+    max-width: 1280px; 
+    margin: 0 auto;
+    position: relative; 
+}
+.kor{
+    position: relative;
+    width: 100%;
+    height: 0;
+    background: #5B7640;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    padding-bottom: calc(518/1100*100%);
+}
+.title{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+.titsha{
+    text-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.25);
+}
+.korlan{    
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 50px;
+    display: flex;
+    width: 50%;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.graphbox{
+    position: absolute;
+    right:26px;
+    top: 0px;
+    width: 45%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* 그래프 박스 이미지 조정하기  */
+.graphbox img{
+    display: flex;
+    width: 40%; 
+    height: 40%;
+    margin: auto;
+}
+/* 위험성 전체 박스 */
+.eff{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+/* 위험성 아티클 */
+.eff_btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../image/brain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    top: 10%;
+    
+}
+.eff_box{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+/* 버튼 */
+.btn{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 550;
+    border: none;
+    background-color: #a2d173;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0px #696969;
+    color: white;
+   align-items: center;
+}
+/* 말풍선+버튼 담는 박스 */
+.bb{
+    grid-column: 3/11;
+    grid-row: 0/5;
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(1,minmax(auto,138px));
+}
+.bb1{
+    grid-row: 3/4;
+ }
+ .bb2{
+     grid-row: 4/5;
+ }
+ .bb3{
+   grid-row: 5/6;
+   align-items: start;
+ }
+ .bb4{
+    grid-row: 6/7;
+    align-items: start;
+ }
+
+ /* 버튼 */
+.b1{
+    grid-column: 3/4;
+}
+.b2{
+    grid-column: 5/6;
+}
+.b3{
+    grid-column: 7/8;
+}
+.b4{
+    grid-column: 9/10;
+    order: 2;
+}
+
+
+/* 말풍선 이미지 삽입, 위치 조정 */
+.db1{
+    background: url(../image/talk3.svg);
+    grid-column: 4/10;
+
+}
+.db2{
+    background: url(../image/talk4.svg);
+    grid-column: 6/12;
+
+}
+.db3{
+    background: url(../image/talk2.svg);
+    grid-column: 8/14;
+}
+.db4{
+    background: url(../image/talk1.svg);
+    grid-column: 3/9;
+    order: 1;
+}
+/* 전체적인 말풍선 박스 조정값 */
+.dan-box{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(180/130*100px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-content: start;
+    font-size: 0.9rem;
+}  
+/* 태블릿 */
+@media screen and (max-width :1024px) {
+    .korlan{
+        font-size: 13px;
+        line-height: 26px;
+        margin-top: 0px;
+    }
+    .title{
+        font-size: 30px;
+        margin-top: 32px;
+        margin-bottom: 30px;
+        margin-left: 26px;
+    }
+    /*언어의 위험성 - 뇌*/
+    .eff_box{
+        height: 70%;
+    }
+    .dan-box{
+        padding-bottom: calc(180/250*100px);
+    }
+    .bb{
+        grid-template-rows: repeat(1,minmax(auto,100px));
+    }
+}
+/* 모바일*/
+@media screen and (max-width: 768px) {
+
+    /*언어의 위험성- 글 수정*/
+    .kor{
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background: #5B7640;
+        border-radius: 20px;
+        margin-top: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .korlan{
+        position: absolute;
+        top: 35%;   
+        font-size: 17px;
+        line-height: 30px;
+        margin-top: 50px;
+        width: 80%;
+        z-index: 2;
+    }
+    .graphbox{
+        position: absolute;
+        right:0;
+        left: 0;
+        top: 5%;
+        width: 100%;
+    }
+    .graphbox img{
+        width: 200px; 
+        height: 200px;
+        margin-top: 12%;
+    }
+    /*언어의 위험성- 뇌 수정 */
+    .btn{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .eff_btn{
+        height: 50%;
+    }
+    .dan-box{
+        padding-bottom: calc(180/300*100px);
+    }
+    .bb{
+        grid-template-rows: repeat(1,minmax(auto,60px));
+    }
+}
+
+#background5{
+    position: relative;
+    top:100%;
+    background-color: #A7DC71;
+    width: 100%;
+    height: 270px;
+    color: white;
+}
+.tabletext{
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tabletext *{
+    font-size: 13px;
+}
+td{
+    padding: 8px;;
+}
+.icons{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.t1{
+    padding-right: 10%;
+}
+.t2{
+    padding-right: 5%;
+}
+@media screen and (max-width: 1000px) {
+    .tabletext{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .inicon{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .tabletext *{
+        font-size: 12px;
+    
+    }
+}
+
