@@ -3,8 +3,7 @@
 #content{
     max-width: 1280px; 
     margin: 0 auto;
-    position: relative;
-   
+    position: relative; 
 }
 .kor{
     position: relative;
@@ -58,7 +57,6 @@
     width: 100%;
     height: 800px;
     position: relative;
-    /* display: grid; */
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
@@ -81,8 +79,6 @@
     position: relative;
     width: 100%;
     height: 800px;
-
-
 }
 /* 버튼 */
 .btn{
@@ -97,12 +93,6 @@
     box-shadow: 0 2px 5px 0px #696969;
     color: white;
    align-items: center;
-}
-
-.eff_info{
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
 /* 말풍선+버튼 담는 박스 */
 .bb{
@@ -138,7 +128,6 @@
 .b3{
     grid-column: 7/8;
 }
-
 .b4{
     grid-column: 9/10;
     order: 2;
@@ -177,8 +166,6 @@
     align-content: start;
     font-size: 0.9rem;
 }  
-   
-
 /* 태블릿 */
 @media screen and (max-width :1024px) {
     .korlan{
@@ -233,19 +220,12 @@
         left: 0;
         top: 5%;
         width: 100%;
-        height:100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        z-index: 0;
     }
     .graphbox img{
-        display: flex;
         width: 200px; 
         height: 200px;
         margin-top: 12%;
     }
-
     /*언어의 위험성- 뇌 수정 */
     .btn{
         width: 30px;
@@ -254,15 +234,15 @@
     }
     .eff_btn{
         height: 50%;
-        /* top: -5px; */
     }
     .dan-box{
         padding-bottom: calc(180/300*100px);
     }
     .bb{
-        grid-template-rows: repeat(1,minmax(auto,80px));
+        grid-template-rows: repeat(1,minmax(auto,60px));
     }
 }
+
 #background5{
     position: relative;
     top:100%;
@@ -306,6 +286,7 @@ td{
 @media screen and (max-width: 540px) {
     .tabletext *{
         font-size: 12px;
+    
     }
 }
 
