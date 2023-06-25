@@ -237,6 +237,9 @@ html, body{
         font-size:100%;
         padding-bottom: 20px;
     }
+    #background3{
+        height: 580px;
+    }
 }
 
 #background4{
