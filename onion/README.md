@@ -1,4 +1,4 @@
-# You_are_a_Onion <img src="../image/logo.png" height="38">
+# You_are_a_Onion <img src="image/logo.png" height="38">
 
 ## 넌 양파 당근같은 옥수수감자야(넌 양파)
 
