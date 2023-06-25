@@ -1,6 +1,5 @@
 window.onload = () => {
     var btns = document.getElementsByClassName("btn");
-    // var dan_box = document.getElementsByClassName("dan-box"); 
     for (x of btns) {
       x.addEventListener("click", (e) => clickButton(e));
     };
