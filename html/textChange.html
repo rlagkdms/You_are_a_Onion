@@ -1,84 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>언어의 움직임</title>
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/textChange.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-<body>
-    <div id = "menu">
-        <ul>
-          <li class = "home"><a href="main.html"><img src = "../image/logo.png" width = "20px" height = "30px"> 넌 양파</a></li>
-          <li class = "small"><a href="onionTest.html">식물의 움직임</a></li>
-          <li id = "selec" class = "small"><a href="textChange.html">언어의 움직임</a></li>
-          <li class = "small"><a href="dangerLang.html">언어의 위험성</a></li>
-        </ul>
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/textChange.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li class="home">
+          <a href="index.html"
+            ><img src="../image/logo.png" width="20px" height="30px" /> 넌
+            양파</a
+          >
+        </li>
+        <li class="small"><a href="onionTest.html">식물의 움직임</a></li>
+        <li id="selec" class="small">
+          <a href="textChange.html">언어의 움직임</a>
+        </li>
+        <li class="small"><a href="dangerLang.html">언어의 위험성</a></li>
+      </ul>
+    </div>
+
+    <div id="back">
+      <div id="top_bar"></div>
+      <div class="text">
+        <input
+          type="text"
+          id="text"
+          class="input"
+          onkeyup="if(window.event.keyCode==13){enter()}"
+          placeholder="욕이 들어간 문장을 입력해보세요!"
+        />
+        <button type="button" class="send" onclick="send()">
+          <i class="bi-send"></i>
+        </button>
       </div>
+    </div>
 
-      <div id="back">
-        <div id="top_bar">
-        </div>
-        <div class="text">
-          <input type="text" id="text" class="input" onkeyup="if(window.event.keyCode==13){enter()}" placeholder="욕이 들어간 문장을 입력해보세요!">
-          <button type="button" class="send" onclick="send()"><i class="bi-send"></i></button>
-        </div>
+    <div id="front">
+      <text> 욕을 채소로 변환해드립니다. </text>
+      <div>
+        <button type="button" class="remove" onclick="remove()">
+          <i class="bi-arrow-up"></i>
+        </button>
+        <button type="button" class="remove" onclick="removeAll()">
+          <i class="bi-arrow-clockwise"></i>
+        </button>
       </div>
+    </div>
 
-      <div id="front">
-        <text>
-          욕을 채소로 변환해드립니다.
-        </text>
-        <div>
-          <button type="button" class="remove" onclick="remove()"><i class="bi-arrow-up"></i></button>
-          <button type="button" class="remove" onclick="removeAll()"><i class="bi-arrow-clockwise"></i></button>
-        </div>
-        
-      </div>
+    <div id="background5">
+      <table class="tabletext" width="80%">
+        <tr>
+          <td width="60%" class="t1">넌 양파</td>
+          <td width="20%" class="t2">Home</td>
+          <td width="20%">
+            <div class="icons">
+              <img src="../image/twitter.png" class="inicon" />
+              <img src="../image/insta.png" class="inicon" />
+              <img src="../image/facebook.png" class="inicon" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="t1">e-mail: w2215@e-mirim.hs.kr | w2203@e-mirim.hs.kr</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="t1">
+            주소 : 서울특별시 관악구 대학동 호암로 546, 미림여자정보과학고등학교
+          </td>
+          <td>이용 약관</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="t1">전화 : 02 - 0000 - 0000</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="t1">팩스: 02 -000 - 000</td>
+          <td>FAQ</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
 
-      <div id="background5">
-        <table class="tabletext" width="80%">
-          <tr>
-            <td width="60%" class="t1">넌 양파</td>
-            <td width="20%" class="t2">Home</td>
-            <td width="20%">
-              <div class="icons">
-                <img src="../image/twitter.png" class="inicon">
-                <img src="../image/insta.png" class="inicon">
-                <img src="../image/facebook.png" class="inicon">
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="t1">e-mail: w2215@e-mirim.hs.kr | w2203@e-mirim.hs.kr</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="t1">주소 : 서울특별시 관악구 대학동 호암로 546, 미림여자정보과학고등학교</td>
-            <td>이용 약관</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="t1">전화 : 02 - 0000 - 0000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="t1">팩스: 02 -000 - 000</td>
-            <td>FAQ</td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-
-
-
-
-      <script src="../js/textChange.js"></script>
-</body>
+    <script src="../js/textChange.js"></script>
+  </body>
 </html>
 <!--study_65 스크롤-->
