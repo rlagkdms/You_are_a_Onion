@@ -55,7 +55,7 @@
 /* 위험성 전체 박스 */
 .eff{
     width: 100%;
-    height: 800px;
+    height: 900px;
     position: relative;
     flex-wrap: wrap;
     margin-bottom: 100px;

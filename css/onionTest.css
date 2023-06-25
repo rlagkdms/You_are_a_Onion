@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
 .content{
     max-width: 1280px; 
-    height: 100vh;
+    height:900px;
     margin: 0 auto;
     position: relative;
     display: flex;
